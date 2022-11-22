@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+import CartWidget from '../CartWidget/CartWidget'
 
 
 function Navbar() {
@@ -31,7 +32,10 @@ function Navbar() {
         </form>
       </div>
     </div>
-</nav></div>
+    <CartWidget />
+</nav>
+
+</div>
   )
 }
 
