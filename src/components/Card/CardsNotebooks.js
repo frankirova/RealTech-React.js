@@ -84,18 +84,28 @@ function
  CardsNotebook  ()  {
   return (
     <div className="container d-flex justify-content-center align-items-center h-100  ">
+
         <div className="row">
+
             <h3 className="titulo m-3">Notebooks</h3>
             {
             cardsNote.map(card => (
                 <div className="col-md-4" key={card.id}>
-                    <Card title={card.marca} img={card.img} alm ={card.almacenamiento} proce={card.procesador} ram= {card.ram} screen={card.pantalla} precio= {card.precio}/>
-                </div>
-            ))
-        
-        }
+                    <Card  
+                        title={card.marca} 
+                        img={card.img} 
+                        alm ={card.almacenamiento} 
+                        proce={card.procesador} 
+                        ram= {card.ram} 
+                        screen={card.pantalla} 
+                        precio= {card.precio}
+                    />
+                </div>))
+            }
+
         </div>
-  </div>
+        
+    </div>
 )};
 
 
